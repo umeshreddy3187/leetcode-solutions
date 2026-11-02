@@ -1,8 +1,17 @@
 class Solution {
     public int lengthOfLastWord(String s) {
-        List<String> l=new ArrayList<>();
-        l=Arrays.asList(s.split(" "));
-        return (l.get(l.size()-1)).length();
-        
+        String l=s.trim();
+        int n=l.length();
+        int j=0;
+        for(int i=n-1;i>=0;i--){
+            if(l.charAt(i)!=' '){
+                j++;
+            }
+            else{
+                break;
+            }
+        }
+        return j;
+
     }
 }
