@@ -1,7 +1,3 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 class Solution {
     public int maxSelectedElements(int[] nums) {
         Arrays.sort(nums);
