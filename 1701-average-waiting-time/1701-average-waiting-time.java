@@ -4,11 +4,12 @@ class Solution {
         long chef=customers[0][0];
         long sum=0;
         for(int i=0;i<n;i++){
-            if(chef<customers[i][0]){
-                chef=customers[i][0];
+            int a=customers[i][0];
+            if(chef<a){
+                chef=a;
             }
             chef+=customers[i][1];
-            sum+=(chef-customers[i][0]);
+            sum+=(chef-a);
         }
         return (double)sum/n;
         
